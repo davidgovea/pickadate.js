@@ -754,6 +754,13 @@ DatePicker.prototype.nodes = function( isOpen ) {
                     lowestYear = focusedYear - numberYears,
                     highestYear = focusedYear + numberYears
 
+                // If pickBirthday mode is active, set highest year to now and lowest year
+                // to 105 years past (no centering year picker around current date)
+                if (settings.pickBirthday) {
+                    highestYear = nowObject.year
+                    lowestYear = nowObject.year - 105
+                }
+
                 // If the min year is greater than the lowest year, increase the highest year
                 // by the difference and set the lowest year to the min year.
                 if ( minYear > lowestYear ) {
