@@ -1,6 +1,17 @@
 
 # Changelog
 
+## 3.2.1
+
+- [#210]({%= meta.gitrepo_url %}/issues/210): Wrapped files using UMD patterns.
+- [#207]({%= meta.gitrepo_url %}/issues/207): Japanese translations added.
+- Some other slight improvements.
+
+## 3.2.0
+
+- [#178]({%= meta.gitrepo_url %}/issues/178): Fix for flicker on iOS while changing months.
+- Added `render(true)` option to render full picker or just the “face” ([read more]({%= pkg.homepage %}/api.htm#method-render)).
+
 ## 3.1.4
 
 - Fix for Polish translation.
